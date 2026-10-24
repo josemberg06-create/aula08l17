@@ -1,7 +1,3 @@
-/* o import de fonts externas é sempre feito na primeira linha do arquvo de css*/
-/* @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap'); */
-
-
 *{
     padding:0;
     margin:0;
@@ -12,9 +8,9 @@
 :root{
 
     
-    --cor-Box:   RGBA(37, 37, 37, 0.8);
+    --cor-Box:  #FFAE00;
     --corBarraNavegacao: #1E1F22;
-    --subTitulosBotoes:#FFAE00 ;
+    --subTitulosBotoes: RGBA(37, 37, 37, 0.8);
     --textos: #ffffff;
 }
 
@@ -22,17 +18,8 @@ body{
     background-image:url(imagens/bg.png);
     text-align: center;
     color:var(--textos);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-main{
-    
-    position: fixed;
-    z-index: 1;
-    top: 10px;
-}
 
 header{
     background-color: var(--corBarraNavegacao);
@@ -42,22 +29,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    position: fixed;
-    
-}
-
-
-main{
-    position: relative;
-    top: 270px;
-    z-index: -1;
 }
 
 nav ul li{
     list-style: none;
     margin: 0 10px;
-   ;
 }
 
 a{
@@ -66,52 +42,3 @@ a{
     font-weight: bolder;
 }
 
-.boxProduto{
-    max-width: 890px;
-    background-color: var(--cor-Box);
-    border-radius: 10px;
-    display: flex;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content:space-evenly; 
-    padding:10px;
-    
-    
-}
-
-.boxImg img{
-    width: 400px;
-
-}
-
-.boxTexto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 400px;
-}
-
-h1, h2, h3, p, bu{
-    margin: 10px;
-    font-family: 'Notable',Arial, Helvetica, sans-serif sans-serif;
-
-}
-
-h3, p, button{
-    margin: 10px;
-}
-
-.btn{
-    width: 150px;
-    padding: 10px;
-    background-color: var(--subTitulosBotoes);
-    border: none;
-    border-radius: 10px;
-    color: var(--textos);
-
-}
-
-p{
-    text-align: justify;
-}
