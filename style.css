@@ -27,12 +27,6 @@ body{
     align-items: center;
 }
 
-main{
-    
-    position: fixed;
-    z-index: 1;
-    top: 10px;
-}
 
 header{
     background-color: var(--corBarraNavegacao);
@@ -47,12 +41,6 @@ header{
     
 }
 
-
-.relativa{
-    position: relative;
-    top: 270px;
-    z-index: -1;
-}
 
 nav ul li{
     list-style: none;
@@ -114,4 +102,15 @@ h3, p, button{
 
 p{
     text-align: justify;
+}
+
+.relativa{
+    position: relative;
+    top: 270px;
+    z-index: -1;
+}
+
+.redondo {
+    weight: 20px;
+    height: 20px;
 }
