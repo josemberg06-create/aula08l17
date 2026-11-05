@@ -25,13 +25,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 250px;
 }
 
 main{
-    
-    position: fixed;
-    z-index: 1;
-    top: 10px;
+    position: static;
 }
 
 header{
@@ -44,14 +42,17 @@ header{
     justify-content: center;
     width: 100%;
     position: fixed;
+
+    /*z-index para deixar o cabeçalho fixo superior a todos os outros elementos incluindo os do bootstrap  */
+
+    z-index: 1030;
+    top:0;
     
 }
 
-
-main{
-    position: relative;
-    top: 270px;
-    z-index: -1;
+[id]{
+    /* corrigir o scrool da barra de navegação para compensar o tamanho do cabacelho  */
+    scroll-margin-top: 250px;
 }
 
 nav ul li{
@@ -114,4 +115,15 @@ h3, p, button{
 
 p{
     text-align: justify;
+}
+
+.relativa{
+    position: relative;
+    top: 270px;
+    z-index: -1;
+}
+
+.redondo {
+    width: 20px;
+    height: 20px;
 }
