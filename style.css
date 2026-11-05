@@ -43,7 +43,7 @@ header{
     width: 100%;
     position: fixed;
 
-    /*z-index para deixar o cabeçalho fixo superior a todos os outros elementos incluindo os do bootstrap  */
+    /*z-index para deixar o cabeçalho fixo superior a todos os outros elementos incluindo os do boots  */
 
     z-index: 1030;
     top:0;
@@ -53,6 +53,10 @@ header{
 [id]{
     /* corrigir o scrool da barra de navegação para compensar o tamanho do cabacelho  */
     scroll-margin-top: 250px;
+}
+
+nav ul{
+    display: flex;
 }
 
 nav ul li{
