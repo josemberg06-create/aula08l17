@@ -48,7 +48,7 @@ header{
 }
 
 
-main{
+.relativa{
     position: relative;
     top: 270px;
     z-index: -1;
